@@ -1,0 +1,39 @@
+.content {
+    background-color: #a5b7d1;
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    transform: rotateY(180deg);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-image: url("/textura2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #62748E;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    background-image: url("/textura1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.content.active {
+    transform: rotateY(0deg);
+}
+
+.active::after {
+    transform: rotateY(180deg);
+}
