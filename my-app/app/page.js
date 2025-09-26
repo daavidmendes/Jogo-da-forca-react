@@ -10,7 +10,6 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-2">
         <Link href="/play" className="text-lg font-semibold transition hover:scale-125">Jogar</Link>
-        <Link href="/" className="text-lg font-semibold transition hover:scale-125">Sobre o Criador</Link>
       </div>
     </div>
   );

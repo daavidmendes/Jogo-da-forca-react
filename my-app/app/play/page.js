@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Letra } from '../components/letra';              // ajuste se necessário
-import { GameoverPopup } from '../components/popup/gameoverPopup';
+import { Letra } from '@/components/letra'
+import { GameoverPopup } from '@/components/popup/gameoverPopup';
 import { palavras } from './palavras';
 import { Audio } from './audio';
 
